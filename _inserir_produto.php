@@ -9,7 +9,7 @@
     $fornecedor = $_POST['fornecedor'];
 
     $sql = "INSERT INTO `estoque`(`nroproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`) VALUES ($codigoproduto,'$nomeproduto','$categoria',$quantidade,'$fornecedor')";
-    $inserir = mysqli_query($conexao, $sql);
+    $inserir = mysqli_query($conexao, $sql); 
 
     $_SESSION['msg'] = "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";
     header('Location:cadastrar_produtos.php');
