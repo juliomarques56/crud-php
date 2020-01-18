@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    $usuario = $_SESSION['usuario'];
+    if (!isset($_SESSION['usuario'])) {
+      header('Location:index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -53,7 +60,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="cadastrar_usuario.php">Cadastrar Usuário</a>
                             <a class="dropdown-item" href="listar_usuarios.php">Listar Usuários</a>                    
-                            <a class="dropdown-item" href="#">Aprovar Usuários</a>                    
+                            <a class="dropdown-item" href="aprovar_usuario.php">Aprovar Usuários</a>                    
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -61,7 +68,7 @@
                         <i class="far fa-user"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <span class="dropdown-item disabled"><i class="far fa-user"></i>&nbsp;Jotamarqques</span>
+                            <span class="dropdown-item disabled"><i class="far fa-user"></i>&nbsp;<?php echo $usuario?></span>
                             <a class="dropdown-item " href="index.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Sair</a>
                             
                         </div>

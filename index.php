@@ -31,17 +31,18 @@
                 unset($_SESSION['msg']);
             }
         ?>
-        <form action="validar_acesso.php">
+        <form action="validar_acesso.php" method="post">
             <div class="form-group">
                 <label>Usuário</label>
-                <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" required>
+                <input type="text" name="usuario" class="form-control" placeholder="Usuário" autocomplete="off" >
             </div>
             <div class="form-group">
                 <label>Senha</label>
-                <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" required>
+                <input type="password" name="senha" class="form-control" placeholder="Senha" autocomplete="off" >
             </div>
+            <button type="submit" class="btn btn-lg btn-success w-100">Acessar</button>
         </form>
-        <button type="submit" class="btn btn-lg btn-success w-100">Acessar</button>
+        
     </div>
     <center>
         <small>Você não possui cadastro? Clique <a href="cadastrar_usuario_externo.php">aqui</a></small>

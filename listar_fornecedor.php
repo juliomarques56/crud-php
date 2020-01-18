@@ -31,7 +31,7 @@
                 <td><?php echo $nome_fornecedor ?></td>
                 <td>
                     <a class="btn btn-sm btn-warning" style="color:#fff" href="editar_fornecedor.php?id=<?php echo $id_fornecedor?>"><i class="far fa-edit"></i>&nbsp;Editar</a>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" href=""><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" href="_deletar_fornecedor.php?id=<?php echo $id_fornecedor?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                 </td>
             </tr>
             <?php } ?>
