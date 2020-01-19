@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     include 'header.php';
 ?>
     <div class="container" id="tamanhoContainer" style="margin-top: 40px;">

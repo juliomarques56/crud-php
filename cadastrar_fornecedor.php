@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     include 'header.php';
 ?>
     <div class="container"  style="width: 400px; margin-top: 40px;">

@@ -1,6 +1,8 @@
 <?php
     session_start();
+
     $usuario = $_SESSION['usuario'];
+    $nivel = $_SESSION['nivelusuario'];
     if (!isset($_SESSION['usuario'])) {
       header('Location:index.php');
     }
@@ -31,7 +33,12 @@
                         PRODUTO
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <?php 
+                                if (($nivel == 1) || ($nivel == 2)) {
+                                
+                            ?>
                             <a class="dropdown-item" href="cadastrar_produtos.php">Cadastrar Produto</a>
+                            <?php }?>
                             <a class="dropdown-item" href="listar_produtos.php">Listar Produto</a>                    
                         </div>
                     </li>
@@ -40,7 +47,12 @@
                         CATEGORIA
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <?php 
+                                if (($nivel == 1) || ($nivel == 2)) {
+                                
+                            ?>
                             <a class="dropdown-item" href="cadastrar_categoria.php">Cadastrar Categoria</a>
+                            <?php }?>
                             <a class="dropdown-item" href="listar_categoria.php">Listar Categoria</a>                    
                         </div>
                     </li>
@@ -49,10 +61,19 @@
                         FORNECEDOR
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <?php 
+                                if (($nivel == 1) || ($nivel == 2)) {
+                                
+                            ?>
                             <a class="dropdown-item" href="Cadastrar_fornecedor.php">Cadastrar Fornecedor</a>
+                            <?php }?>
                             <a class="dropdown-item" href="listar_fornecedor.php">Listar Fornecedor</a>
                         </div>
                     </li>
+                    <?php 
+                        if ($nivel == 1) {
+                        
+                    ?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         USUÁRIO
@@ -63,6 +84,7 @@
                             <a class="dropdown-item" href="aprovar_usuario.php">Aprovar Usuários</a>                    
                         </div>
                     </li>
+                    <?php }?>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="far fa-user"></i>

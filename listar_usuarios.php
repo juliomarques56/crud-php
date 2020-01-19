@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    
     include 'header.php';
 ?>
 <div class="container" style="margin-top: 40px;">
@@ -59,8 +59,16 @@
                 <td><?php echo $status ?></td>
 
                 <td>
+                    <?php 
+                        if (($nivel == 1) || ($nivel == 2)) { 
+                    ?>
                     <a class="btn btn-sm btn-warning" style="color:#fff" href="editar_usuario.php?id=<?php echo $id_usuario?> "><i class="far fa-edit"></i>&nbsp;Editar</a>
+                    <?php }?>
+                    <?php 
+                        if ($nivel == 1) { 
+                    ?>
                     <a class="btn btn-sm btn-danger" style="color:#fff" href="_deletar_usuario.php?id=<?php echo $id_usuario?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <?php }?>
                 </td>
         </tr>
         <?php } ?>
