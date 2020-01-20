@@ -50,7 +50,7 @@
                     <?php 
                         if ($nivel == 1) { 
                     ?>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" href="_deletar_produto.php?id=<?php echo $id_estoque?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-prod="Deseja excluir o produto?" href="_deletar_produto.php?id=<?php echo $id_estoque?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     <?php } ?>
                 </td>
         </tr>

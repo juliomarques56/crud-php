@@ -29,7 +29,9 @@
                 $_SESSION['nivelusuario'] = $nivel;
                 header('Location:menu.php');
             }else{
-                $_SESSION['msg'] = "<div class='alert alert-success'>Senha incorreta!</div>";
+                $_SESSION['msg'] = "<script language='javascript' type='text/javascript'>
+                alert('Login e/ou senha incorretos');window.location
+                .href='index.php';</script>";
                 header('Location:index.php');
             }
             

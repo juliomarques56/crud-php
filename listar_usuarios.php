@@ -31,7 +31,7 @@
                     $id_usuario = $array['id_usuario'];
                     $nomeusuario = $array['nome_usuario'];
                     $emailusuario = $array['email_usuario'];
-                    $nivel = $array['nivel_usuario'];
+                    $nivelusuario = $array['nivel_usuario'];
                     $status = $array['status'];
                 
             ?>
@@ -39,19 +39,19 @@
                 <td><?php echo $nomeusuario ?></td>
                 <td><?php echo $emailusuario ?></td>
                 <?php 
-                    if ($nivel == 1) {
+                    if ($nivelusuario == 1) {
                         
                 ?>
                     <td>Administrador</td>
                 <?php }?>
                 <?php 
-                    if ($nivel == 2) {
+                    if ($nivelusuario == 2) {
                         
                 ?>
                     <td>Funcionário</td>
                 <?php }?>
                 <?php 
-                    if ($nivel == 3) {
+                    if ($nivelusuario == 3) {
                         
                 ?>
                     <td>Conferente</td>
@@ -67,7 +67,7 @@
                     <?php 
                         if ($nivel == 1) { 
                     ?>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" href="_deletar_usuario.php?id=<?php echo $id_usuario?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-user="Deseja excluir o usuário?" href="_deletar_usuario.php?id=<?php echo $id_usuario?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     <?php }?>
                 </td>
         </tr>

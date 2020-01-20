@@ -91,7 +91,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <span class="dropdown-item disabled"><i class="far fa-user"></i>&nbsp;<?php echo $usuario?></span>
-                            <a class="dropdown-item " href="index.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Sair</a>
+                            <a class="dropdown-item " href="_logout.php"><i class="fas fa-sign-out-alt"></i>&nbsp;Sair</a>
                             
                         </div>
                     </li>
