@@ -3,7 +3,7 @@
     $id = $_GET['id'];
 ?>
     <div class="container"  style="width: 400px; margin-top: 40px;">
-        <h4>Cadastro de Categoria</h4>
+        <h4>Editar Categoria</h4>
         <form action="_atualizar_categoria.php" method="post">
             <?php 
                 include 'conexao.php';
@@ -16,7 +16,7 @@
             ?>
             <div class="form-group">
                 <label>Categoria</label>
-                <input type="text" name="fornecedor" class="form-control" value="<?php echo $nome_categoria ?>" placeholder="Digite o nome da categoria">
+                <input type="text" name="categoria" class="form-control" value="<?php echo $nome_categoria ?>" placeholder="Digite o nome da categoria">
                 <input type="text" name="id" class="form-control" value="<?php echo $id ?>" style="display:none">
             </div>
             <div style="text-align: right">

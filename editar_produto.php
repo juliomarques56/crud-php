@@ -4,7 +4,7 @@
     $id = $_GET['id'];
 ?>
     <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
-        <h4>Editar de Produto</h4>
+        <h4>Editar Produto</h4>
         <form action="_atualizar_produto.php" method="post">
             <?php 
                 $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";

@@ -3,7 +3,7 @@
     $id = $_GET['id'];
 ?>
     <div class="container"  style="width: 400px; margin-top: 40px;">
-        <h4>Cadastro de Categoria</h4>
+        <h4>Editar Fornecedor</h4>
         <form action="_atualizar_fornecedor.php" method="post">
             <?php 
                 include 'conexao.php';
