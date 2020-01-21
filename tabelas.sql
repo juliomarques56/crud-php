@@ -35,7 +35,7 @@ CREATE TABLE `produtos` (
 
 -- --------------------------------------------------------
 
---
+-
 -- Estrutura da tabela `usuarios`
 --
 CREATE TABLE `usuarios` (
