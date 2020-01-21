@@ -9,7 +9,7 @@
     $quantidade = $_POST['quantidade'];
     $fornecedor = $_POST['fornecedor'];
 
-    echo $sql = "UPDATE `estoque` SET `nomeproduto`='$nomeproduto',`categoria`='$categoria',`quantidade`=$quantidade,`fornecedor`='$fornecedor' WHERE id_estoque = $id";
+    echo $sql = "UPDATE `produtos` SET `nomeproduto`='$nomeproduto',`categoria`='$categoria',`quantidade`=$quantidade,`fornecedor`='$fornecedor' WHERE id_produto = $id";
     $atualizar = mysqli_query($conexao,$sql);
 
     $_SESSION['msg'] = "<div class='alert alert-success'>Produto atualizado com sucesso!</div>";

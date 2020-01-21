@@ -23,11 +23,11 @@
         <tr>
             <?php 
                 include 'conexao.php';
-                $sql = "SELECT * FROM `estoque`";
+                $sql = "SELECT * FROM `produtos`";
                 $buscar = mysqli_query($conexao,$sql);
 
                 while ($array = mysqli_fetch_array($buscar)) {
-                    $id_estoque = $array['id_estoque'];
+                    $id_produto = $array['id_produto'];
                     $nroproduto = $array['nroproduto'];
                     $nomeproduto = $array['nomeproduto'];
                     $categoria = $array['categoria'];
@@ -45,12 +45,12 @@
                     <?php 
                         if (($nivel == 1) || ($nivel == 2)) { 
                     ?>
-                    <a class="btn btn-sm btn-warning" style="color:#fff" href="editar_produto.php?id=<?php echo $id_estoque?>"><i class="far fa-edit"></i>&nbsp;Editar</a>
+                    <a class="btn btn-sm btn-warning" style="color:#fff" href="editar_produto.php?id=<?php echo $id_produto?>"><i class="far fa-edit"></i>&nbsp;Editar</a>
                     <?php } ?>
                     <?php 
                         if ($nivel == 1) { 
                     ?>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-prod="Deseja excluir o produto?" href="_deletar_produto.php?id=<?php echo $id_estoque?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-prod="Deseja excluir o produto?" href="_deletar_produto.php?id=<?php echo $id_produto?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     <?php } ?>
                 </td>
         </tr>

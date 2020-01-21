@@ -12,6 +12,7 @@
     <table class="table ">
         <thead>
             <tr>
+            <th scope="col">Id</th>
             <th scope="col">Nome</th>
             <th scope="col">Ação</th>
             </tr>
@@ -27,6 +28,7 @@
                     $nome_categoria = $array['nome_categoria'];
                 
             ?>
+                <td><?php echo $id_categoria ?></td>
                 <td><?php echo $nome_categoria ?></td>
                 <td>
                     <?php 

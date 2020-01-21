@@ -7,11 +7,11 @@
         <h4>Editar Produto</h4>
         <form action="_atualizar_produto.php" method="post">
             <?php 
-                $sql = "SELECT * FROM `estoque` WHERE id_estoque = $id";
+                $sql = "SELECT * FROM `produtos` WHERE id_produto = $id";
                 $buscar = mysqli_query($conexao,$sql);
                 
                 while ($array = mysqli_fetch_array($buscar)) {
-                    $id_estoque = $array['id_estoque'];
+                    $id_produto = $array['id_produto'];
                     $nroproduto = $array['nroproduto'];
                     $nomeproduto = $array['nomeproduto'];
                     $categoria = $array['categoria'];

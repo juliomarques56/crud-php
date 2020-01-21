@@ -8,7 +8,7 @@
     $quantidade = $_POST['quantidade'];
     $fornecedor = $_POST['fornecedor'];
 
-    $sql = "INSERT INTO `estoque`(`nroproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`) VALUES ($codigoproduto,'$nomeproduto','$categoria',$quantidade,'$fornecedor')";
+    $sql = "INSERT INTO `produtos`(`nroproduto`, `nomeproduto`, `categoria`, `quantidade`, `fornecedor`) VALUES ($codigoproduto,'$nomeproduto','$categoria',$quantidade,'$fornecedor')";
     $inserir = mysqli_query($conexao, $sql); 
 
     $_SESSION['msg'] = "<div class='alert alert-success'>Produto cadastrado com sucesso!</div>";

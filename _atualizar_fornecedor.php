@@ -8,6 +8,6 @@
     $sql = "UPDATE `fornecedor` SET `nome_fornecedor`='$nome_fornecedor' WHERE id_fornecedor = $id";
     $atualizar = mysqli_query($conexao,$sql);
 
-    $_SESSION['msg'] = "<div class='alert alert-success'>Fornecedor atualizada com sucesso!</div>";
+    $_SESSION['msg'] = "<div class='alert alert-success'>Fornecedor atualizado com sucesso!</div>";
     header('Location:listar_fornecedor.php');
 ?>

@@ -6,7 +6,7 @@
 
     if (empty($_POST['usuario']) || empty($_POST['senha'])) {
         
-        $_SESSION['msg'] = "<div class='alert alert-success'>Preencha todos os campos</div>";
+        $_SESSION['msg'] = "<div class='alert alert-danger'>Preencha todos os campos</div>";
         header('Location:index.php');
         exit();
 
@@ -29,14 +29,12 @@
                 $_SESSION['nivelusuario'] = $nivel;
                 header('Location:menu.php');
             }else{
-                $_SESSION['msg'] = "<script language='javascript' type='text/javascript'>
-                alert('Login e/ou senha incorretos');window.location
-                .href='index.php';</script>";
+                $_SESSION['msg'] = "<div class='alert alert-danger'>Senha incorreta!</div>";
                 header('Location:index.php');
             }
             
         }else{
-            $_SESSION['msg'] = "<div class='alert alert-success'>Usuário não cadastrado!</div>";
+            $_SESSION['msg'] = "<div class='alert alert-danger'>Usuário não cadastrado!</div>";
             header('Location:index.php');
         }
     }

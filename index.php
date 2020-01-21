@@ -25,12 +25,14 @@
         <center>
             <img src="assets/img/cadeado.png" style="width: 125px;">
         </center>
-        <?php
-            if (isset($_SESSION['msg'])) {
-                echo $_SESSION['msg'];
-                unset($_SESSION['msg']);
-            }
-        ?>
+        <div>
+            <?php
+                if (isset($_SESSION['msg'])) {
+                    echo $_SESSION['msg'];
+                    unset($_SESSION['msg']);
+                }
+            ?>
+        </div>
         <form action="validar_acesso.php" method="post">
             <div class="form-group">
                 <label>Usuário</label>
@@ -47,5 +49,6 @@
     <center>
         <small>Você não possui cadastro? Clique <a href="cadastrar_usuario_externo.php">aqui</a></small>
     </center>
+
 </body>
 </html>
