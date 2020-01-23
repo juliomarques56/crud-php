@@ -5,7 +5,7 @@
 ?>
     <div class="container" id="tamanhoContainer" style="margin-top: 40px;">
         <h4>Editar Produto</h4>
-        <form action="_atualizar_produto.php" method="post">
+        <form action="_atualizar.php" method="post">
             <?php 
                 $sql = "SELECT * FROM `produtos` WHERE id_produto = $id";
                 $buscar = mysqli_query($conexao,$sql);
@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label>Nome Produto</label>
-                <input type="text" name="nomeproduto" class="form-control" value="<?php echo $nomeproduto?>" placeholder="Insira o nome do produto">
+                <input type="text" name="nomeproduto" class="form-control" value="<?php echo $nomeproduto?>" placeholder="Insira o nome do produto" autocomplete="off">
             </div>
             <div class="form-group">
                 <label>Categoria</label>
@@ -49,7 +49,7 @@
             </div>
             <div style="text-align: right">
                 <a href="listar_produtos.php" class="btn btn-sm btn-warning">Voltar</a>
-                <button type="submit" class="btn btn-sm btn-success">Confirmar</button>
+                <button type="submit" name="updateprod" class="btn btn-sm btn-success">Confirmar</button>
             </div>
             <?php }?>
         </form>

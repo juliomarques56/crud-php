@@ -67,7 +67,7 @@
                     <?php 
                         if ($nivel == 1) { 
                     ?>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-user="Deseja excluir o usuário?" href="_deletar_usuario.php?id=<?php echo $id_usuario?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" data-confirm-user="Deseja excluir o usuário?" href="_excluir.php?deluser=<?php echo $id_usuario?>"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     <?php }?>
                 </td>
         </tr>

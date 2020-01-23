@@ -20,7 +20,7 @@
                 unset($_SESSION['msg']);
             }
         ?>
-        <form action="_inserir_usuario_externo.php" method="post">
+        <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Nome do Usuário</label>
                 <input type="text" name="nomeusuario" class="form-control" placeholder="Nome">
@@ -40,7 +40,7 @@
             </div>
             <div style="text-align: right">
                 <a href="index.php" class="btn btn-sm btn-warning">Voltar</a>
-                <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
+                <button type="submit" name="insertuserex" class="btn btn-sm btn-success">Cadastrar</button>
             </div>
         </form>
     </div>

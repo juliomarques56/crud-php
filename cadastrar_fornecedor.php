@@ -9,13 +9,13 @@
                 unset($_SESSION['msg']);
             }
         ?>
-        <form action="_inserir_fornecedor.php" method="post">
+        <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Fornecedor</label>
                 <input type="text" name="fornecedor" class="form-control" placeholder="Digite o nome do fornecedor">
             </div>
             <div style="text-align: right">
-                <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
+                <button type="submit" name="insertfor" class="btn btn-sm btn-success">Cadastrar</button>
             </div>
         </form>
     </div>

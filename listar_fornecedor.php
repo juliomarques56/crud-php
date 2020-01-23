@@ -39,7 +39,7 @@
                     <?php 
                         if ($nivel == 1) { 
                     ?>
-                    <a class="btn btn-sm btn-danger" style="color:#fff" href="_deletar_fornecedor.php?id=<?php echo $id_fornecedor?>" data-confirm-for="Deseja excluir o Fornecedor?"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
+                    <a class="btn btn-sm btn-danger" style="color:#fff" href="_excluir.php?delfor=<?php echo $id_fornecedor?>" data-confirm-for="Deseja excluir o Fornecedor?"><i class="far fa-trash-alt"></i>&nbsp;Excluir</a>
                     <?php } ?>
                 </td>
             </tr>

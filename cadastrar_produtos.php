@@ -9,7 +9,7 @@
                 unset($_SESSION['msg']);
             }
         ?>
-        <form action="_inserir_produto.php" method="post">
+        <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Código Produto</label>
                 <input type="number" name="codigoproduto" class="form-control" placeholder="Insira o número do produto">
@@ -39,7 +39,7 @@
                 </select>
             </div>
             <div style="text-align: right">
-                <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
+                <button type="submit" name="insertprod" class="btn btn-sm btn-success">Cadastrar</button>
             </div>
         </form>
     </div>

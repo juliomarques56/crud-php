@@ -9,7 +9,7 @@
                 unset($_SESSION['msg']);
             }
         ?>
-        <form action="_inserir_usuario.php" method="post">
+        <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Nome do Usuário</label>
                 <input type="text" class="form-control" name="nomeusuario" placeholder="Nome">
@@ -36,7 +36,7 @@
                 </select>
             </div>
             <div style="text-align: right">
-                <button type="submit" class="btn btn-sm btn-success">Cadastrar</button>
+                <button type="submit" name="insertuser" class="btn btn-sm btn-success">Cadastrar</button>
             </div>
         </form>
     </div>
