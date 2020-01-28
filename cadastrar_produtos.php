@@ -21,9 +21,16 @@
             <div class="form-group">
                 <label>Categoria</label>
                 <select class="form-control" name="categoria">
-                  <option>Periférico</option>
-                  <option>Hardware</option>
-                  <option>Software</option>
+                    <option>Selecione...</option>
+                <?php 
+                    include 'conexao.php';
+                    $sql = "SELECT * FROM `categoria`";
+                    $buscar = mysqli_query($conexao,$sql);
+                    while ($array = mysqli_fetch_array($buscar)) {
+                       $nome_categoria = $array['nome_categoria'];  
+                ?>
+                  <option><?php echo $nome_categoria ?></option>
+                <?php } ?>
                 </select>
             </div>
             <div class="form-group">
@@ -31,11 +38,19 @@
                 <input type="number" name="quantidade" class="form-control" placeholder="Insira a quantidade do produto">
             </div>
             <div class="form-group">
+
                 <label>Fornecedor</label>
                 <select class="form-control" name="fornecedor">
-                  <option>Fornecedor A</option>
-                  <option>Fornecedor B</option>
-                  <option>Fornecedor C</option>
+                    <option>Selecione...</option>
+                <?php 
+                    include 'conexao.php';
+                    $sql = "SELECT * FROM `fornecedor`";
+                    $buscar = mysqli_query($conexao,$sql);
+                    while ($array = mysqli_fetch_array($buscar)) {
+                       $nome_fornecedor = $array['nome_fornecedor'];  
+                ?>
+                  <option><?php echo $nome_fornecedor ?></option>
+                <?php } ?>
                 </select>
             </div>
             <div style="text-align: right">
