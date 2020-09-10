@@ -12,15 +12,15 @@
         <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Código Produto</label>
-                <input type="number" name="codigoproduto" class="form-control" placeholder="Insira o número do produto">
+                <input type="number" name="codigoproduto" class="form-control" placeholder="Insira o número do produto" required>
             </div>
             <div class="form-group">
                 <label>Nome Produto</label>
-                <input type="text" name="nomeproduto" class="form-control" placeholder="Insira o nome do produto">
+                <input type="text" name="nomeproduto" class="form-control" placeholder="Insira o nome do produto" required>
             </div>
             <div class="form-group">
                 <label>Categoria</label>
-                <select class="form-control" name="categoria">
+                <select class="form-control" name="categoria" required>
                     <option>Selecione...</option>
                 <?php 
                     include 'conexao.php';
@@ -35,12 +35,12 @@
             </div>
             <div class="form-group">
                 <label>Quantidade</label>
-                <input type="number" name="quantidade" class="form-control" placeholder="Insira a quantidade do produto">
+                <input type="number" name="quantidade" class="form-control" placeholder="Insira a quantidade do produto" required>
             </div>
             <div class="form-group">
 
                 <label>Fornecedor</label>
-                <select class="form-control" name="fornecedor">
+                <select class="form-control" name="fornecedor" required>
                     <option>Selecione...</option>
                 <?php 
                     include 'conexao.php';

@@ -31,7 +31,18 @@
                     echo $_SESSION['msg'];
                     unset($_SESSION['msg']);
                 }
+
+              
+
+
             ?>
+          <script>(function() {
+    console.log(5); 
+    setTimeout(function(){console.log(6)}, 10); 
+    setTimeout(function(){console.log(7)}, 0); 
+    console.log(8);
+})();</script>
+            
         </div>
         <form action="validar_acesso.php" method="post">
 

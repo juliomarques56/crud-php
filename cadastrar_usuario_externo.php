@@ -23,19 +23,19 @@
         <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Nome do Usuário</label>
-                <input type="text" name="nomeusuario" class="form-control" placeholder="Nome">
+                <input type="text" name="nomeusuario" class="form-control" placeholder="Nome" required>
             </div>
             <div class="form-group">
                 <label>E-mail</label>
-                <input type="email" name="emailusuario" class="form-control" placeholder="E-mail">
+                <input type="email" name="emailusuario" class="form-control" placeholder="E-mail" required>
             </div>
             <div class="form-group">
                 <label>Senha do Usuário</label>
-                <input id="txtSenha" name="senhausuario" type="password" class="form-control" placeholder="Senha">
+                <input id="txtSenha" name="senhausuario" type="password" class="form-control" placeholder="Senha" required>
             </div>
             <div class="form-group">
                 <label>Repetir Senha</label>
-                <input type="password" class="form-control" placeholder="Repetir senha" oninput="validaSenha(this)">
+                <input type="password" class="form-control" placeholder="Repetir senha" required oninput="validaSenha(this)">
                 <small>Precisa ser igual a senha digirada acima</small>
             </div>
             <div style="text-align: right">

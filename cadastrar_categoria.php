@@ -12,7 +12,7 @@
         <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Categoria</label>
-                <input type="text" name="categoria" class="form-control" placeholder="Digite o nome da categoria">
+                <input type="text" name="categoria" class="form-control" placeholder="Digite o nome da categoria" required>
             </div>
             <div style="text-align: right">
                 <button type="submit" name="insertcat" class="btn btn-sm btn-success">Cadastrar</button>

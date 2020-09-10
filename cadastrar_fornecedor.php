@@ -12,7 +12,7 @@
         <form action="_inserir.php" method="post">
             <div class="form-group">
                 <label>Fornecedor</label>
-                <input type="text" name="fornecedor" class="form-control" placeholder="Digite o nome do fornecedor">
+                <input type="text" name="fornecedor" class="form-control" placeholder="Digite o nome do fornecedor" required>
             </div>
             <div style="text-align: right">
                 <button type="submit" name="insertfor" class="btn btn-sm btn-success">Cadastrar</button>
