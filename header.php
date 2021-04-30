@@ -65,7 +65,7 @@
                                 if (($nivel == 1) || ($nivel == 2)) {
                                 
                             ?>
-                            <a class="dropdown-item" href="Cadastrar_fornecedor.php">Cadastrar Fornecedor</a>
+                            <a class="dropdown-item" href="cadastrar_fornecedor.php">Cadastrar Fornecedor</a>
                             <?php }?>
                             <a class="dropdown-item" href="listar_fornecedor.php">Listar Fornecedor</a>
                         </div>
